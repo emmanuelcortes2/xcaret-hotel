@@ -1,26 +1,24 @@
-'use client';
-import { useEffect, useState } from 'react';
-import Image from 'next/image';
-import * as data from '../data/data.json'
+'use client'
+import { useEffect, useState } from 'react'
+import Image from 'next/image'
+import datos from '../data/data.json' assert { type: 'json' }
 
 export default function NavBar() {
-  // const [data, setData] = useState(null);
-  // useEffect(() => {
-  //   const fetchedData = async () => {
-  //     const res = await fetch(
-  //       'https://raw.githubusercontent.com/javialcocer/test-json/main/data.json'
-  //     );
-  //     const data = await res.json();
-  //     setData(data);
-  //   };
-
-  //   fetchedData();
-  // }, []);
+  // console.log('data', data)
+  const [data, setData] = useState(null)
+  useEffect(() => {
+    setData(datos)
+  }, [])
 
   return (
     <nav className="flex flex-row p-4 items-center justify-between h-20">
       {data && (
-        <Image src={data.es.navbar.logo} width={125} height={125} alt='hotel xcaret logo'/>
+        <Image
+          src={data.es.navbar.logo}
+          width={125}
+          height={125}
+          alt="hotel xcaret logo"
+        />
       )}
       <ul className="flex flex-row gap-4">
         {data && (
@@ -38,5 +36,5 @@ export default function NavBar() {
         )}
       </ul>
     </nav>
-  );
+  )
 }
