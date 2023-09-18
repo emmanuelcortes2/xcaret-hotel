@@ -10,10 +10,10 @@ export default function Headline() {
     <>
       {data && (
         <>
-          <section className="flex flex-col gap-8 mt-0 bg-gray-400 w-screen p-12">
+          <section className="flex flex-col gap-8 mt-0 bg-gray-200 w-screen p-12 mb-24">
             <h1 className='text-4xl text-center'>{data.es.header.h1}</h1>
             <h2 className='text-3xl text-center'>{data.es.header.discount}</h2>
-            <p className='text-2xl text-gray-700'>{data.es.header.paragraphs[1]}</p>
+            <p className='text-xl text-gray-700'>{data.es.header.paragraphs[1]}</p>
           </section>
         </>
       )}

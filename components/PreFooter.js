@@ -50,7 +50,7 @@ export default function PreFooter() {
               {data.es.prefooter.contactCenter.title}
             </p>
             <p className="pl-6">{data.es.prefooter.contactCenter.email}</p>
-            <ul className="flex flex-row gap-9 px-6 py-4 justify-between">
+            <ul className="flex flex-row text-xs gap-9 px-6 py-4 justify-between">
               <li className="flex flex-col">
                 <a href="">{data.es.prefooter.numbers[0].name.split(':')} </a>
                 <span>{data.es.prefooter.numbers[0].number}</span>

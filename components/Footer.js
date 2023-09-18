@@ -8,7 +8,7 @@ export default function Footer() {
     setDatos(data)
   }, [])
   return (
-    <footer className="flex flex-col text-gray-500 bg-black p-4">
+    <footer className="flex flex-col text-gray-500 bg-black p-4 text-xs">
       {datos && (
         <>
           <p className="text-center">{datos.es.footer.copy}</p>

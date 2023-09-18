@@ -20,7 +20,7 @@ export default function NavBar() {
           alt="hotel xcaret logo"
         />
       )}
-      <ul className="flex flex-row gap-4">
+      <ul className="flex flex-row gap-4 text-sm">
         {data && (
           <>
             <li>{data.es.navbar.menu.contact.toUpperCase()}</li>
