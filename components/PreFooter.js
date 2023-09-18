@@ -8,7 +8,7 @@ export default function PreFooter() {
   useEffect(() => {
     setData(datos)
   }, [])
-
+  console.log(data)
   return (
     <>
       <div className="bg-zinc-600 text-gray-400 text-capitalize">
